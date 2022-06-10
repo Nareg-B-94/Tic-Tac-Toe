@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <img class="gameOver d-none" id="gameOver" src="images/game-over.png" alt="">
+    <div class="buttonDiv">
+        <button id="restartButton" class="restartButton d-none " onclick="restart()"> Restart </button>
+    </div>
+    <div class="mainDiv">
+        <div class="relativeDiv">
+
+            <div id="drawnLine1" class="drawnLine" style="top: 58px; left: 26px;"></div>
+            <div id="drawnLine2" class="drawnLine" style="top:195px;left: 26px;"></div>
+            <div id="drawnLine3" class="drawnLine" style="top:332px;left: 26px;"></div>
+            <div id="drawnLine4" class="Vertical  drawnLine" style="top: 191px; left: 26px;"></div>
+            <div id="drawnLine5" class="Vertical drawnLine" style="top: 191px; right:170px"></div>
+            <div id="drawnLine6" class="Vertical drawnLine" style="top: 191px; left:163px"></div>
+            <div id="drawnLine7" class="Diagonal1 drawnLine" style="top: 195px; left:26px"></div>
+            <div id="drawnLine8" class="Diagonal2 drawnLine" style="top: 195px; left: 26px;"></div>
+            <tr>
+
+                <table>
+
+
+                    <td onclick="clickOnSpace(0)"><img id="circle0" class="d-none shapeImage" src="./images/circle.png"
+                            alt=""><img id="cross0" class="d-none shapeImage" src="./images/cross.png" alt=""></td>
+                    <td onclick="clickOnSpace(1)"><img id="circle1" class="d-none shapeImage" src="./images/circle.png"
+                            alt=""><img id="cross1" class="d-none shapeImage" src="./images/cross.png" alt=""></td>
+                    <td onclick="clickOnSpace(2)"><img id="circle2" class="d-none shapeImage" src="./images/circle.png"
+                            alt=""><img id="cross2" class="d-none shapeImage" src="./images/cross.png" alt=""></td>
+            </tr>
+
+            <tr>
+                <td onclick="clickOnSpace(3)"><img id="circle3" class="d-none shapeImage" src="./images/circle.png"
+                        alt=""><img id="cross3" class="d-none shapeImage" src="./images/cross.png" alt=""></td>
+                <td onclick="clickOnSpace(4)"><img id="circle4" class="d-none shapeImage" src="./images/circle.png"
+                        alt=""><img id="cross4" class="d-none shapeImage" src="./images/cross.png" alt=""></td>
+                <td onclick="clickOnSpace(5)"><img id="circle5" class="d-none shapeImage" src="./images/circle.png"
+                        alt=""><img id="cross5" class="d-none shapeImage" src="./images/cross.png" alt=""></td>
+            </tr>
+
+            <tr>
+                <td onclick="clickOnSpace(6)"><img id="circle6" class="d-none shapeImage" src="./images/circle.png"
+                        alt=""><img id="cross6" class="d-none shapeImage" src="./images/cross.png" alt=""></td>
+                <td onclick="clickOnSpace(7)"><img id="circle7" class="d-none shapeImage" src="./images/circle.png"
+                        alt=""><img id="cross7" class="d-none shapeImage" src="./images/cross.png" alt=""></td>
+                <td onclick="clickOnSpace(8)"><img id="circle8" class="d-none shapeImage" src="./images/circle.png"
+                        alt=""><img id="cross8" class="d-none shapeImage" src="./images/cross.png" alt=""></td>
+            </tr>
+            </table>
+        </div>
+        <div class="players">
+            <div id="player1" class="player1">
+                <img src="./images/circle.png" alt=""> <span> Player 1 </span>
+            </div>
+            <div id="player2" class="player2 playerInactive">
+                <img src="./images/cross.png" alt=""> <span> Player 2 </span>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
